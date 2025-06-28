@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estoque do Bar 🍷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Estoque do Bar 🍸</h1>
+
+  <section>
+    <h2>Adicionar Produto</h2>
+    <input type="text" id="nome" placeholder="Nome da bebida">
+    <input type="number" id="quantidade" placeholder="Quantidade">
+    <select id="tipo">
+      <option value="Cerveja">Cerveja</option>
+      <option value="Destilado">Destilado</option>
+      <option value="Refrigerante">Refrigerante</option>
+      <option value="Suco">Suco</option>
+    </select>
+    <button onclick="adicionarProduto()">Adicionar</button>
+  </section>
+
+  <section>
+    <h2>Estoque Atual</h2>
+    <label for="filtroTipo">Filtrar por tipo:</label>
+    <select id="filtroTipo" onchange="listarEstoque()">
+      <option value="">Todos</option>
+      <option value="Cerveja">Cerveja</option>
+      <option value="Destilado">Destilado</option>
+      <option value="Refrigerante">Refrigerante</option>
+      <option value="Suco">Suco</option>
+    </select>
+    <ul id="listaEstoque"></ul>
+    <button onclick="exportarEstoque()">Exportar Estoque</button>
+  </section>
+
+  <section>
+    <h2>Histórico de Movimentações</h2>
+    <ul id="historico"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
