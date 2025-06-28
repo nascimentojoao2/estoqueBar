@@ -1,4 +1,4 @@
-# estoqueBar
+# estoque-bar
 📦 Controle de Estoque do Bar – Stupendo
 Sistema Web responsivo desenvolvido para auxiliar no controle de estoque do bar do restaurante Stupendo. Permite o cadastro, entrada e saída de bebidas, com alertas de baixo estoque, histórico de movimentações e exportação de dados.
 
